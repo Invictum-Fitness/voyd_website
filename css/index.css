@@ -36,6 +36,9 @@
     border: 1px solid var(--border);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
+.hero-tagline{
+    margin-bottom: 30px;
+}
 
 /* ==========================================================================
    5. PAGE SECTIONS (Features, Stats, CTA)
@@ -83,4 +86,32 @@ footer { padding: 48px 0; border-top: 1px solid var(--border); color: var(--text
     .nav-links { display: none; }
     .stats-row { flex-direction: column; }
     .stat-item { border-right: none; border-bottom: 1px solid var(--border); }
+    .features-grid {
+        /* We dwingen de grid naar 1 kolom en verminderen de tussenruimte */
+        grid-template-columns: 1fr; 
+        gap: 16px;
+    }
+
+    .feature-card {
+        /* Minder padding zodat de tekst niet 'opgesloten' zit */
+        padding: 24px 20px; 
+        border-radius: 12px;
+    }
+
+    .feature-card h3 {
+        font-size: 1.25rem; /* Iets compacter voor mobiel */
+        margin-bottom: 8px;
+    }
+
+    .feature-card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    .section-title {
+        text-align: center; /* Ziet er vaak beter uit op mobiel */
+        margin-bottom: 32px;
+    }
+    
 }
+

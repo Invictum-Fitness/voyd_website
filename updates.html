@@ -18,15 +18,24 @@
 <body>
 
   <nav>
-    <a href="index.html" class="nav-logo"><span>VOYD</span></a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="updates.html" class="active">Updates</a></li>
-      <li><a href="support.html">Support</a></li>
-    </ul>
-    <a href="index.html#download" class="nav-cta">Download</a>
-  </nav>
+  <a href="index.html" class="nav-logo"><span>VOYD</span></a>
+  
+  <div class="menu-toggle" id="mobile-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="updates.html">Updates</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li class="nav-cta-mobile"><a href="#download" class="nav-cta">Download</a></li>
+  </ul>
+  
+  <a href="#download" class="nav-cta nav-cta-desktop">Download</a>
+</nav>
 
   <div class="page-hero">
     <div class="container">
@@ -314,6 +323,21 @@
       });
     });
   </script>
+  <script>
+  const menu = document.querySelector('#mobile-menu');
+  const menuLinks = document.querySelector('.nav-links');
+
+  menu.addEventListener('click', function() {
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+  });
+
+  // Sluit menu als je op een link klikt (handig voor anchor links)
+  document.querySelectorAll('.nav-links a').forEach(n => n.addEventListener('click', () => {
+    menu.classList.remove('is-active');
+    menuLinks.classList.remove('active');
+  }));
+</script>
 
 </body>
 
