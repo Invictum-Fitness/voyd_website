@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VOYD — Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/support.css">
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><span>VOYD</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="updates.html">Updates</a></li>
+    <li><a href="support.html" class="active">Support</a></li>
+  </ul>
+  <a href="index.html#download" class="nav-cta">Download</a>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <p class="section-label">Support Center</p>
+    <h1>How can we help?</h1>
+    <p>Find answers to common questions or reach out directly. We're here and we're quick.</p>
+    <div class="quick-links">
+  <a href="support.html#faq" class="quick-link">📋 Browse FAQs</a>
+  <a href="support.html#contact" class="quick-link">✉️ Contact Us</a>
+  <a href="updates.html" class="quick-link">🚀 See Latest Updates</a>
+</div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <p class="section-label">FAQs</p>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-sub">The most common questions, answered clearly.</p>
+
+    <div class="faq-grid">
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Is VOYD free to download?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes. VOYD is completely free to download on both the App Store and Google Play. Core features are always free. Optional premium features may be offered in the future, and we'll be transparent when that happens.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Which devices and OS versions are supported?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">VOYD supports iOS 16 and above, and Android 10 and above. We recommend keeping your device and the app up to date for the best experience. Older OS versions may work but are not officially supported.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How does VOYD handle my data and privacy?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Your data is encrypted end-to-end and never sold or shared with third parties. VOYD collects only what is necessary to provide the service. You can request to export or delete your data by sending us an email.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          I forgot my password. How do I reset it?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Tap "Forgot Password" on the login screen in the app and enter your email address. You'll receive a reset link within a couple of minutes.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How does cross-device sync work?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Sign in with the same VOYD account on both your devices. Changes sync automatically and near-instantly — typically under 200ms. Sync works over Wi-Fi and mobile data. Offline changes are queued and pushed when you reconnect.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Can I use VOYD offline?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes. VOYD is fully functional offline. All your data is cached locally and the full feature set is available without an internet connection. Changes sync automatically as soon as you're back online.</div>
+        </div>
+      </div>
+
+   
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Where can I report a bug or request a feature?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Use the contact form on this page. We read every submission and our team triages bug reports within 48 hours. Feature requests are tracked and reviewed as part of our quarterly roadmap process.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How quickly does support respond?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">We try to respond within 24 hours. We work with a small team so on busy days it might take longer.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <div class="support-layout">
+
+      <div class="contact-info">
+        <p class="section-label">Get in Touch</p>
+        <h3>Still need help? We've got you.</h3>
+        <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.7; margin-bottom: 32px;">Fill out the form and a real person from our support team will get back to you. We don't use bots for support.</p>
+        <div class="info-cards">
+          <div class="info-card">
+            <span class="info-icon">✉️</span>
+            <div>
+              <h4>Email Support</h4>
+              <p>For general enquiries: <a href="mailto:support@voydfitness.com">support@voydfitness.com</a></p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">🔒</span>
+            <div>
+              <h4>Security Issues</h4>
+              <p>Please report vulnerabilities directly to <a href="mailto:support@voydfitness.com">support@voydfitness.com</a> and do not disclose publicly.</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">⏱</span>
+            <div>
+              <h4>Response Time</h4>
+              <p>We aim to respond within 24 hours, Monday–Friday. Often sooner.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-card">
+    <h3>Send a message</h3>
+    <p>Tell us what's going on and we'll help you sort it out.</p>
+    
+    <iframe 
+        data-tally-src="https://tally.so/r/pbPOr1" 
+        loading="lazy" 
+        width="100%" 
+        height="500" 
+        frameborder="0" 
+        marginheight="0" 
+        marginwidth="0" 
+        title="Contact VOYD">
+    </iframe>
+</div>
+
+<script async src="https://tally.so/widgets/embed.js"></script>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-content">
+    <div class="footer-left">
+      <span class="footer-logo">VOYD</span>
+      <p class="footer-tagline">Step into the future.</p>
+    </div>
+    
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="updates.html">Updates</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    
+    <div class="footer-bottom-text">
+      <span>© 2026 VOYD. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+    // Open this one if it was closed
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,336 @@
+/* PAGE HERO */
+.page-hero {
+    padding: 160px 0 64px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 500px;
+    background: radial-gradient(ellipse, rgba(30, 78, 216, 0.13) 0%, transparent 65%);
+}
+
+.page-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.page-hero p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+
+
+/* TIMELINE */
+.timeline {
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--accent) 0%, var(--border) 40%, transparent 100%);
+}
+
+.timeline-year {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent-light);
+    padding-left: 56px;
+    margin-bottom: 32px;
+    margin-top: 56px;
+}
+
+.timeline-year:first-child {
+    margin-top: 0;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.timeline-dot {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+.dot-major {
+    background: var(--accent);
+    border: 2px solid rgba(59, 110, 248, 0.4);
+    color: #fff;
+}
+
+.dot-minor {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.7rem;
+}
+
+.dot-fix {
+    background: rgba(30, 78, 216, 0.1);
+    border: 1px solid rgba(30, 78, 216, 0.25);
+    color: var(--accent-light);
+    font-size: 0.7rem;
+}
+
+.timeline-card {
+    flex: 1;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    transition: border-color 0.25s, transform 0.25s;
+}
+
+.timeline-card:hover {
+    border-color: rgba(30, 78, 216, 0.35);
+    transform: translateX(4px);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.card-version {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--text-main);
+}
+
+.badge {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 100px;
+}
+
+.badge-major {
+    background: rgba(30, 78, 216, 0.2);
+    border: 1px solid rgba(30, 78, 216, 0.4);
+    color: var(--accent-light);
+}
+
+.badge-minor {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+}
+
+.badge-fix {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: #34d399;
+}
+
+.card-date {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin-left: auto;
+}
+
+.timeline-card h3 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.timeline-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.65;
+    margin-bottom: 16px;
+}
+
+.timeline-card p:last-of-type {
+    margin-bottom: 0;
+}
+
+.changes-list {
+    list-style: none;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.changes-list li {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.changes-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent-light);
+    font-size: 0.75rem;
+    top: 1px;
+}
+
+/* FOOTER */
+footer {
+    padding: 48px 0;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+footer a {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--text-main);
+}
+
+.footer-links {
+    display: flex;
+    gap: 28px;
+}
+
+/* ==========================================================================
+   LAUNCH CARD - VOYD BLUE EDITION
+   ========================================================================== */
+
+/* De kaart met een felle blauwe border en diepe gloed */
+.timeline-item.launch-special .timeline-card {
+    border: 1px solid var(--accent);
+    background: linear-gradient(145deg, var(--surface) 0%, #0a1329 100%);
+    /* Een krachtige blauwe gloed die de kaart laat zweven */
+    box-shadow: 0 0 40px rgba(30, 78, 216, 0.25);
+    position: relative;
+}
+
+/* Het "Launch" label in felle blauwe tinten */
+.badge-launch {
+    background: rgba(30, 78, 216, 0.2) !important;
+    color: var(--accent-light) !important;
+    border: 1px solid rgba(30, 78, 216, 0.4);
+}
+
+/* De raket-dot met extra glow */
+.dot-launch {
+    background: var(--accent) !important;
+    box-shadow: 0 0 20px var(--accent);
+    color: #FFFFFF !important;
+    font-size: 1.2rem;
+}
+
+/* De titel krijgt een wit-naar-blauw verloop */
+.launch-special h3 {
+    background: linear-gradient(90deg, #FFFFFF, var(--accent-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+/* Optioneel: een subtiel pulse effect op de raket-dot */
+.dot-launch {
+    animation: pulseBlue 2s infinite;
+}
+
+/* ==========================================================================
+   ANDROID LAUNCH CARD - VOYD BLUE EDITION
+   ========================================================================== */
+
+.timeline-item.android-launch .timeline-card {
+    border: 1px solid var(--accent);
+    background: linear-gradient(145deg, var(--surface) 0%, #0a1329 100%);
+    box-shadow: 0 0 30px rgba(30, 78, 216, 0.2);
+}
+
+.badge-android {
+    background: rgba(30, 78, 216, 0.15) !important;
+    color: var(--accent-light) !important;
+    border: 1px solid rgba(30, 78, 216, 0.3);
+}
+
+.dot-android {
+    background: var(--accent) !important;
+    box-shadow: 0 0 15px var(--accent);
+    color: #FFFFFF !important;
+}
+
+.android-launch h3 {
+    background: linear-gradient(90deg, #FFFFFF, var(--accent-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes pulseBlue {
+    0% { box-shadow: 0 0 10px var(--accent); }
+    50% { box-shadow: 0 0 25px var(--accent-light); }
+    100% { box-shadow: 0 0 10px var(--accent); }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .timeline::before {
+        left: 16px;
+    }
+
+    .timeline-dot {
+        width: 32px;
+        height: 32px;
+    }
+
+    .timeline-card {
+        padding: 20px;
+    }
+}
