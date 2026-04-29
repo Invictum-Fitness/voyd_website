@@ -322,12 +322,11 @@ footer a:hover {
     }
 
     .timeline::before {
-        left: 16px;
+        display: none;
     }
 
     .timeline-dot {
-        width: 32px;
-        height: 32px;
+        display: none;
     }
 
     .timeline-card {
