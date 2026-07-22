@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VOYD Fitness — Step into the Future</title>
+  <title>VOYD Fitness & Nutrition</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" href="css/index.css">
@@ -20,7 +20,7 @@
 <body>
 
   <nav>
-  <a href="index.html" class="nav-logo"><span>VOYD Fitness</span></a>
+  <a href="/" class="nav-logo"><span>VOYD Fitness</span></a>
   
   <div class="menu-toggle" id="mobile-menu">
     <span class="bar"></span>
@@ -29,10 +29,10 @@
   </div>
 
   <ul class="nav-links">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="updates.html">Updates</a></li>
-    <li><a href="support.html">Support</a></li>
+    <li><a href="/" class="active">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/updates">Updates</a></li>
+    <li><a href="/support">Support</a></li>
     <li class="nav-cta-mobile"><a href="#download" class="nav-cta">Download</a></li>
   </ul>
   
@@ -40,12 +40,12 @@
 </nav>
 
   <section class="hero">
-    <div class="hero-badge">Now Available · v1.0.8 Released</div>
-    <h1>Step into<br>the <span style="color: var(--accent-light);">Future</span></h1>
-    <p class="hero-tagline">The app that redefines how you experience the world around you.</p>
+    <div class="hero-badge">Available on iOS & Android</div>
+    <h1>Train Smarter.<br>Grow <span style="color: var(--accent-light);">Faster</span>.</h1>
+    <p class="hero-tagline">Track your workouts and nutrition, get coached by AI, and compete with friends - all in one app.</p>
     <div class="hero-actions">
       <a href="#download" class="btn-primary">Get the App</a>
-      <a href="about.html" class="btn-ghost">Learn More</a>
+      <a href="/about" class="btn-ghost">Learn More</a>
     </div>
     <div class="hero-image-wrap">
       <img src="assets/banner.png" alt="VOYD Banner" class="hero-banner-img">
@@ -53,34 +53,53 @@
   </section>
 
   <section id="features" class="container">
-    <h2 class="section-title">Built for the next generation</h2>
+    <h2 class="section-title">Everything you need. Nothing you don't.</h2>
     <div class="features-grid">
       <div class="feature-card">
-        <h3>⚡ Instant Performance</h3>
-        <p>Engineered for speed.</p>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+            <polyline points="17 6 23 6 23 12"></polyline>
+          </svg>
+        </div>
+        <h3>Track Everything</h3>
+        <p>Log workouts and nutrition side by side, and watch every PR and goal update in real time.</p>
       </div>
       <div class="feature-card">
-        <h3>🔒 Privacy First</h3>
-        <p>Your data belongs to you.</p>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+        </div>
+        <h3>Your AI Coach</h3>
+        <p>Ask questions, get personal exercise guidance, and let VOYD generate templates built around your goals.</p>
       </div>
       <div class="feature-card">
-        <h3>🌐 Cross-Platform</h3>
-        <p>iOS and Android sync.</p>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </div>
+        <h3>Compete With Friends</h3>
+        <p>Add friends, join competitions, and turn consistency into a game you actually want to play.</p>
       </div>
     </div>
 
     <div class="stats-row">
       <div class="stat-item">
-        <div class="stat-num">V1.0+</div>
-        <div class="stat-label">Production Ready</div>
+        <div class="stat-num">90+</div>
+        <div class="stat-label">Standard Exercises</div>
       </div>
       <div class="stat-item">
-        <div class="stat-num">100%</div>
-        <div class="stat-label">Privacy Focused</div>
+        <div class="stat-num">2-in-1</div>
+        <div class="stat-label">Workouts & Nutrition</div>
       </div>
       <div class="stat-item">
-        <div class="stat-num">24/7</div>
-        <div class="stat-label">Personal Support</div>
+        <div class="stat-num">AI</div>
+        <div class="stat-label">Coach Included</div>
       </div>
     </div>
   </section>
@@ -107,16 +126,16 @@
     <div class="container footer-content">
       <div class="footer-left">
         <span class="footer-logo">VOYD Fitness</span>
-        <p class="footer-tagline">Step into the future.</p>
+        <p class="footer-tagline">Built for the grind.</p>
       </div>
 
       <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="updates.html">Updates</a>
-        <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/updates">Updates</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Use</a>
       </div>
 
       <div class="footer-bottom-text">

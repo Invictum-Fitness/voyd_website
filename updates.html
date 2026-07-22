@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VOYD Fitness — Updates</title>
+  <title>VOYD Fitness - Updates</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/updates.css">
   <link rel="stylesheet" href="css/global.css">
@@ -18,7 +18,7 @@
 <body>
 
   <nav>
-  <a href="index.html" class="nav-logo"><span>VOYD Fitness</span></a>
+  <a href="/" class="nav-logo"><span>VOYD Fitness</span></a>
   
   <div class="menu-toggle" id="mobile-menu">
     <span class="bar"></span>
@@ -27,10 +27,10 @@
   </div>
 
   <ul class="nav-links">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="updates.html">Updates</a></li>
-    <li><a href="support.html">Support</a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/updates" class="active">Updates</a></li>
+    <li><a href="/support">Support</a></li>
     <li class="nav-cta-mobile"><a href="#download" class="nav-cta">Download</a></li>
   </ul>
   
@@ -41,7 +41,7 @@
     <div class="container">
       <p class="section-label">Changelog</p>
       <h1>What's New in VOYD Fitness</h1>
-      <p>Every update, every fix, every feature — documented clearly so you always know what changed and why.</p>
+      <p>Every update, every fix, every feature - documented clearly so you always know what changed and why.</p>
     </div>
   </div>
 
@@ -49,6 +49,86 @@
     
 
     <div class="timeline">
+      <!--v1.1.2-->
+      <div class="timeline-item">
+        <div class="timeline-dot dot-fix">1.1.2</div>
+        <div class="timeline-card">
+          <div class="card-header">
+            <span class="card-version">v1.1.2</span>
+            <span class="badge badge-fix">Hotfix</span>
+            <span class="card-date">10 July 2026</span>
+          </div>
+          <h3>Small Fixes, Smoother Logging</h3>
+          <p>A couple of annoying bugs squashed to keep your logging fast and accurate.</p>
+          <ul class="changes-list">
+            <li><strong>Decimal Input:</strong> Fixed an issue where using a comma (,) instead of a period (.) wasn't accepted in weight fields.</li>
+            <li><strong>Scroll Fix:</strong> Fixed weight and reps values disappearing when scrolling down during a workout.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!--v1.1.1-->
+      <div class="timeline-item">
+        <div class="timeline-dot dot-minor">1.1.1</div>
+        <div class="timeline-card">
+          <div class="card-header">
+            <span class="card-version">v1.1.1</span>
+            <span class="badge badge-minor">Enhancement</span>
+            <span class="card-date">18 May 2026</span>
+          </div>
+          <h3>Apple & Google Sign-In</h3>
+          <p>Getting into your account just got faster, plus a couple of reliability fixes.</p>
+          <ul class="changes-list">
+            <li><strong>Social Login:</strong> You can now sign in with Apple or Google instead of creating a separate account.</li>
+            <li><strong>Duration Fix:</strong> Fixed workout duration not saving correctly.</li>
+            <li><strong>Notifications Fix:</strong> Fixed Android notifications not triggering due to an exact alarm permission issue.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!--v1.1.0-->
+      <div class="timeline-item">
+        <div class="timeline-dot dot-major">1.1.0</div>
+        <div class="timeline-card">
+          <div class="card-header">
+            <span class="card-version">v1.1.0</span>
+            <span class="badge badge-major">Major Update</span>
+            <span class="card-date">14 May 2026</span>
+          </div>
+          <h3>VOYD Is Here</h3>
+          <p>Invictum Fitness is now VOYD Fitness. Subscriptions are live, non-premium users get tokens to try premium features, and you can now import your history straight from Strong or Hevy.</p>
+          <ul class="changes-list">
+            <li><strong>Rebrand:</strong> Invictum Fitness is now VOYD Fitness, with updated screenshots and app store listing.</li>
+            <li><strong>Subscriptions Live:</strong> Premium subscriptions are now active.</li>
+            <li><strong>Tokens:</strong> Non-premium users now receive tokens to try premium features.</li>
+            <li><strong>Bulk Import:</strong> Import your workout history in bulk from Strong or Hevy.</li>
+            <li><strong>Import PR Fix:</strong> Fixed PRs not calculating correctly after a bulk import.</li>
+            <li><strong>PR Recheck:</strong> PRs are now automatically rechecked and removed if a workout is edited afterward.</li>
+            <li><strong>Tutorial Fix:</strong> Fixed the onboarding tutorial glitching for some users.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!--v1.0.9-->
+      <div class="timeline-item">
+        <div class="timeline-dot dot-minor">1.0.9</div>
+        <div class="timeline-card">
+          <div class="card-header">
+            <span class="card-version">v1.0.9</span>
+            <span class="badge badge-minor">Enhancement</span>
+            <span class="card-date">21 April 2026</span>
+          </div>
+          <h3>Exercise Visuals & Smarter Summaries</h3>
+          <p>This update enhances how you view exercises and track your weekly progress, alongside important stability improvements for the workout tracker.</p>
+          <ul class="changes-list">
+            <li><strong>Personal Exercise Coach:</strong> Added dedicated coaching features for individual exercises to help you optimize form and execution.</li>
+            <li><strong>Visual Library:</strong> The exercise list now includes images for quick and easy visual reference.</li>
+            <li><strong>Weekly Summaries:</strong> Switched the weekly summary tracking metric from total volume to sets & reps for a clearer, more actionable view of your workload.</li>
+            <li><strong>Stability Fix:</strong> Removed text auto-focus when starting a new workout to eliminate keyboard-related crashes and UI bugs.</li>
+            <li><strong>Data Integrity:</strong> Fixed a glitch where editing an active workout could cause weights to randomly swap between sets.</li>
+          </ul>
+        </div>
+      </div>
       <!--v1.0.8-->
       <div class="timeline-item">
         <div class="timeline-dot dot-minor">1.0.8</div>
@@ -202,7 +282,7 @@
           <p>Small tweaks, big impact. We focused on making your workout session smoother and providing more context for
             every set you perform.</p>
           <ul class="changes-list">
-            <li><strong>Smart Timers:</strong> Tapping the check icon now triggers your rest timer immediately — no more
+            <li><strong>Smart Timers:</strong> Tapping the check icon now triggers your rest timer immediately - no more
               manual starting.</li>
             <li><strong>Performance History:</strong> Exercises now display your previous performance (reps x weight) in
               real-time as you train.</li>
@@ -276,7 +356,7 @@
             <span class="badge badge-launch">The Big Bang</span>
             <span class="card-date">11 December 2025</span>
           </div>
-          <h3>VOYD Fitness 1.0 — The Beginning (For IOS)</h3>
+          <h3>VOYD Fitness 1.0 - The Beginning (For IOS)</h3>
           <p>After months of building, testing, and refining, the vision of your discipline is finally live. This is
             where the journey starts.</p>
           <ul class="changes-list">
@@ -316,12 +396,12 @@
     </div>
     
     <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="updates.html">Updates</a>
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Use</a>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/updates">Updates</a>
+      <a href="/support">Support</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Use</a>
     </div>
     
     <div class="footer-bottom-text">

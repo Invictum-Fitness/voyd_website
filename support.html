@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>VOYD Fitness — Support</title>
+  <title>VOYD Fitness - Support</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/support.css">
   <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo"><span>VOYD Fitness</span></a>
+  <a href="/" class="nav-logo"><span>VOYD Fitness</span></a>
   
   <div class="menu-toggle" id="mobile-menu">
     <span class="bar"></span>
@@ -22,10 +22,10 @@
   </div>
 
   <ul class="nav-links">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="updates.html">Updates</a></li>
-    <li><a href="support.html">Support</a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/updates">Updates</a></li>
+    <li><a href="/support" class="active">Support</a></li>
     <li class="nav-cta-mobile"><a href="#download" class="nav-cta">Download</a></li>
   </ul>
   
@@ -39,9 +39,9 @@
     <h1>How can we help?</h1>
     <p>Find answers to common questions or reach out directly. We're here and we're quick.</p>
     <div class="quick-links">
-  <a href="support.html#faq" class="quick-link">📋 Browse FAQs</a>
-  <a href="support.html#contact" class="quick-link">✉️ Contact Us</a>
-  <a href="updates.html" class="quick-link">🚀 See Latest Updates</a>
+  <a href="/support#faq" class="quick-link">📋 Browse FAQs</a>
+  <a href="/support#contact" class="quick-link">✉️ Contact Us</a>
+  <a href="/updates" class="quick-link">🚀 See Latest Updates</a>
 </div>
   </div>
 </div>
@@ -101,7 +101,7 @@
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          <div class="faq-answer-inner">Sign in with the same VOYD Fitness account on both your devices. Changes sync automatically and near-instantly — typically under 200ms. Sync works over Wi-Fi and mobile data. Offline changes are queued and pushed when you reconnect.</div>
+          <div class="faq-answer-inner">Sign in with the same VOYD Fitness account on both your devices. Changes sync automatically and near-instantly - typically under 200ms. Sync works over Wi-Fi and mobile data. Offline changes are queued and pushed when you reconnect.</div>
         </div>
       </div>
 
@@ -141,58 +141,193 @@
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- MESSAGE FORM -->
 <section id="contact" style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
-  <div class="container">
-    <div class="support-layout">
+  <div class="container container-narrow">
+    <p class="section-label">Get in Touch</p>
+    <h2 class="section-title">Send a message</h2>
+    <p class="section-sub">Tell us what's going on and we'll help you sort it out.</p>
 
-      <div class="contact-info">
-        <p class="section-label">Get in Touch</p>
-        <h3>Still need help? We've got you.</h3>
-        <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.7; margin-bottom: 32px;">Fill out the form and a real person from our support team will get back to you. We don't use bots for support.</p>
-        <div class="info-cards">
-          <div class="info-card">
-            <span class="info-icon">✉️</span>
-            <div>
-              <h4>Email Support</h4>
-              <p>For general enquiries: <a href="mailto:support@voydfitness.com">support@voydfitness.com</a></p>
-            </div>
-          </div>
-          <div class="info-card">
-            <span class="info-icon">🔒</span>
-            <div>
-              <h4>Security Issues</h4>
-              <p>Please report vulnerabilities directly to <a href="mailto:support@voydfitness.com">support@voydfitness.com</a> and do not disclose publicly.</p>
-            </div>
-          </div>
-          <div class="info-card">
-            <span class="info-icon">⏱</span>
-            <div>
-              <h4>Response Time</h4>
-              <p>We aim to respond within 24 hours, Monday-Friday. Often sooner.</p>
-            </div>
+    <div class="contact-card">
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="cf-subject-trigger">Subject</label>
+          <div class="custom-select" id="cf-subject">
+            <button type="button" class="custom-select-trigger" id="cf-subject-trigger" aria-haspopup="listbox" aria-expanded="false">
+              <span class="custom-select-value">Select a topic</span>
+              <svg class="custom-select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <ul class="custom-select-options" role="listbox" tabindex="-1" hidden>
+              <li role="option" data-value="bug">Bug report</li>
+              <li role="option" data-value="question">General question</li>
+              <li role="option" data-value="feature">Feature request</li>
+              <li role="option" data-value="account">Account / billing</li>
+              <li role="option" data-value="other">Other</li>
+            </ul>
           </div>
         </div>
+        <div class="form-group">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" placeholder="Tell us what's going on..." required></textarea>
+        </div>
+        <input type="checkbox" id="cf-botcheck" name="botcheck" class="hidden-field" tabindex="-1" autocomplete="off">
+        <p id="cf-status" class="cf-status" role="status" aria-live="polite"></p>
+        <button type="submit" class="btn-submit">Send message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Custom subject dropdown
+  const customSelect = document.getElementById('cf-subject');
+  const selectTrigger = document.getElementById('cf-subject-trigger');
+  const selectValue = selectTrigger.querySelector('.custom-select-value');
+  const selectOptions = customSelect.querySelector('.custom-select-options');
+  let selectedSubject = '';
+
+  function closeSelect() {
+    selectOptions.hidden = true;
+    selectTrigger.setAttribute('aria-expanded', 'false');
+  }
+
+  selectTrigger.addEventListener('click', function () {
+    const isOpen = !selectOptions.hidden;
+    if (isOpen) {
+      closeSelect();
+    } else {
+      selectOptions.hidden = false;
+      selectTrigger.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  selectOptions.querySelectorAll('li').forEach(function (option) {
+    option.addEventListener('click', function () {
+      selectedSubject = option.dataset.value;
+      selectValue.textContent = option.textContent;
+      selectOptions.querySelectorAll('li').forEach(function (o) { o.setAttribute('aria-selected', 'false'); });
+      option.setAttribute('aria-selected', 'true');
+      closeSelect();
+    });
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!customSelect.contains(e.target)) closeSelect();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeSelect();
+  });
+
+  const WEB3FORMS_ACCESS_KEY = "0f7273c2-49aa-4822-b827-81d417e3df74";
+
+  const contactForm = document.getElementById('contact-form');
+  const contactStatus = document.getElementById('cf-status');
+
+  contactForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const submitBtn = contactForm.querySelector('.btn-submit');
+    const name = document.getElementById('cf-name').value.trim();
+    const email = document.getElementById('cf-email').value.trim();
+    const message = document.getElementById('cf-message').value.trim();
+
+    if (!name || !email || !selectedSubject || !message) {
+      contactStatus.textContent = 'Please fill in all fields, including a subject.';
+      contactStatus.className = 'cf-status cf-status-error';
+      return;
+    }
+
+    const payload = {
+      access_key: WEB3FORMS_ACCESS_KEY,
+      name: name,
+      email: email,
+      subject: selectedSubject,
+      message: message,
+      botcheck: document.getElementById('cf-botcheck').checked,
+    };
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    contactStatus.textContent = '';
+    contactStatus.className = 'cf-status';
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+
+      if (!data.success) throw new Error(data.message || 'Request failed');
+
+      contactForm.reset();
+      contactStatus.textContent = "Message sent - we'll get back to you soon.";
+      contactStatus.className = 'cf-status cf-status-success';
+    } catch (err) {
+      contactStatus.textContent = 'Something went wrong. Please try again or email us directly.';
+      contactStatus.className = 'cf-status cf-status-error';
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send message';
+    }
+  });
+</script>
+
+<!-- STILL NEED HELP -->
+<section id="help">
+  <div class="container container-narrow">
+    <p class="section-label">Still Stuck?</p>
+    <h2 class="section-title">Still need help? We've got you.</h2>
+    <p class="section-sub">Other ways to reach our team directly.</p>
+
+    <div class="info-cards">
+      <div class="info-card">
+        <div class="info-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22 6 12 13 2 6"></polyline>
+          </svg>
+        </div>
+        <div>
+          <h4>Email Support</h4>
+          <p>For general enquiries: <a href="mailto:support@voydfitness.com">support@voydfitness.com</a></p>
+        </div>
       </div>
-
-      <div class="contact-card">
-    <h3>Send a message</h3>
-    <p>Tell us what's going on and we'll help you sort it out.</p>
-    
-    <iframe 
-        data-tally-src="https://tally.so/r/pbPOr1" 
-        loading="lazy" 
-        width="100%" 
-        height="500" 
-        frameborder="0" 
-        marginheight="0" 
-        marginwidth="0" 
-        title="Contact VOYD">
-    </iframe>
-</div>
-
-<script async src="https://tally.so/widgets/embed.js"></script>
-
+      <div class="info-card">
+        <div class="info-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+        </div>
+        <div>
+          <h4>Security Issues</h4>
+          <p>Please report vulnerabilities directly to <a href="mailto:support@voydfitness.com">support@voydfitness.com</a> and do not disclose publicly.</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+        </div>
+        <div>
+          <h4>Response Time</h4>
+          <p>We aim to respond within 24 hours, Monday-Friday. Often sooner.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -221,12 +356,12 @@
     </div>
     
     <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="updates.html">Updates</a>
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Use</a>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/updates">Updates</a>
+      <a href="/support">Support</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Use</a>
     </div>
     
     <div class="footer-bottom-text">
